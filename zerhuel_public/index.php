@@ -474,4 +474,12 @@ $application_folder = ROOT . DIRECTORY_SEPARATOR . 'zerhuel_app';
  * And away we go...
  */
  // die(ENVIRONMENT);
+ try {
 require_once BASEPATH.'core/CodeIgniter.php';
+}
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
+
