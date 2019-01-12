@@ -1,4 +1,4 @@
 <?php
 
-// require 'zerhuel_public/index.php';
-echo 'hello';
+include 'zerhuel_public/index.php';
+// echo 'hello';
