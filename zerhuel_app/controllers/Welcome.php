@@ -38,6 +38,7 @@ public function demo_date() {
 	 
 	public function index()
 	{
+		echo ENVIRONMENT;
 		$this->load->library('encryption');
 $key = $this->encryption->create_key(16);
 // Get a hex-encoded representation of the key:
