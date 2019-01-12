@@ -62,14 +62,14 @@ $hook['post_controller_constructor'][] = array(
  * @todo			Autodetect that if its ssl was expired, send an email
  *
  ***************************************************************************/
-$hook['post_controller_constructor'][] = array(
+/* $hook['post_controller_constructor'][] = array(
   'class' 		=> 'force_ssl',
   'function' 	=> 'force_ssl',
   'filename' 	=> 'ssl_hook.php',
   'filepath' 	=> 'hooks'
 );
 
-
+ */
 
 /***************************************************************************
  *

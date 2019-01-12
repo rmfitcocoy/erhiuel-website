@@ -8073,3 +8073,61 @@ INFO - 2019-01-12 23:07:56 --> Final output sent to browser
 DEBUG - 2019-01-12 23:07:56 --> Total execution time: 2.4321
 INFO - 2019-01-12 23:07:56 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
 INFO - 2019-01-12 23:07:56 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
+INFO - 2019-01-12 23:19:31 --> Config Class Initialized
+INFO - 2019-01-12 23:19:31 --> Hooks Class Initialized
+DEBUG - 2019-01-12 23:19:31 --> UTF-8 Support Enabled
+INFO - 2019-01-12 23:19:31 --> Utf8 Class Initialized
+INFO - 2019-01-12 23:19:31 --> URI Class Initialized
+DEBUG - 2019-01-12 23:19:31 --> No URI present. Default controller set.
+INFO - 2019-01-12 23:19:31 --> Router Class Initialized
+INFO - 2019-01-12 23:19:31 --> Output Class Initialized
+INFO - 2019-01-12 23:19:31 --> Security Class Initialized
+DEBUG - 2019-01-12 23:19:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-01-12 23:19:31 --> Input Class Initialized
+INFO - 2019-01-12 23:19:31 --> Language Class Initialized
+INFO - 2019-01-12 23:19:31 --> Loader Class Initialized
+DEBUG - 2019-01-12 23:19:31 --> Config file loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\config/development\maintenance_config.php
+INFO - 2019-01-12 23:19:31 --> Helper loaded: storehours_helper
+INFO - 2019-01-12 23:19:31 --> Helper loaded: url_helper
+INFO - 2019-01-12 23:19:32 --> Email Class Initialized
+DEBUG - 2019-01-12 23:19:32 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2019-01-12 23:19:32 --> Session: Class initialized using 'files' driver.
+INFO - 2019-01-12 23:19:32 --> Controller Class Initialized
+INFO - 2019-01-12 23:19:32 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hooks by DESKTOP-225VK9J with the unit name Cocoy
+.
+DEBUG - 2019-01-12 23:19:32 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by DESKTOP-225VK9J using the unit name Cocoy
+.
+INFO - 2019-01-12 23:19:32 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hooks by DESKTOP-225VK9J with the unit name Cocoy
+.
+DEBUG - 2019-01-12 23:19:32 --> Development:xxxxxxxxxxx-0.0.1DESKTOP-225VK9J with the unit name Cocoy
+ is accessing with SSL Request.
+DEBUG - 2019-01-12 23:19:32 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2019-01-12 23:19:32 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2019-01-12 23:19:32 --> Encryption Class Initialized
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\welcome_message.php
+DEBUG - 2019-01-12 23:19:32 --> Config file loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\config/development\develbar.php
+INFO - 2019-01-12 23:19:32 --> Helper loaded: utility_helper
+INFO - 2019-01-12 23:19:32 --> Helper loaded: language_helper
+INFO - 2019-01-12 23:19:32 --> Helper loaded: text_helper
+INFO - 2019-01-12 23:19:32 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2019-01-12 23:19:32 --> DevelBar Class Initialized !
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/benchmarks.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/memory_usage.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/request.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/database.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/hooks.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/ajax.php
+INFO - 2019-01-12 23:19:32 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/libraries.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/helpers.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/views.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/config.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/session.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/models.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_public\/assets/develbar/css/develbar.css
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_public\/assets/develbar/js/develbar.js
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_app\views\utilities/develbar/develbar.php
+INFO - 2019-01-12 23:19:33 --> File loaded: C:\xampp\htdocs\erhiuel-website\zerhuel_public\/assets/develbar/js/ajax.js
+INFO - 2019-01-12 23:19:33 --> Final output sent to browser
+DEBUG - 2019-01-12 23:19:33 --> Total execution time: 1.7797
+INFO - 2019-01-12 23:19:33 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
+INFO - 2019-01-12 23:19:33 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
