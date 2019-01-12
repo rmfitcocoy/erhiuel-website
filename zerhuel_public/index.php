@@ -473,7 +473,7 @@ $application_folder = ROOT . DIRECTORY_SEPARATOR . 'zerhuel_app';
  *
  * And away we go...
  */
- // die(ENVIRONMENT);
+ die(ENVIRONMENT);
  try {
 require_once BASEPATH.'core/CodeIgniter.php';
 }
