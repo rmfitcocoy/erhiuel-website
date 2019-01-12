@@ -126,7 +126,7 @@ if(! defined('ENVIRONMENT') )
 			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $testing);
 			break;
 			
-			case 'localhost:8080' :
+			case 'scarfonictechtest0001.azurewebsites.net' :
 			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $production);
 			break;
 			
