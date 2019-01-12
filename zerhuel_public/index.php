@@ -79,6 +79,8 @@ defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'))
 $development = 'development';
 $testing = 'testing';
 $production = 'production';
+defined('ENVIRONMENT') OR define('ENVIRONMENT',$production);
+
 
 // It's in two places - let's be smart	
 // Uncomment the below 1 line  the setup should be based on the servervariables
@@ -127,6 +129,8 @@ if(! defined('ENVIRONMENT') )
 			break;
 			
 			case 'scarfonictechtest0001.azurewebsites.net' :
+			case 'localhost:8080' :
+			
 			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $production);
 			break;
 			
@@ -469,4 +473,5 @@ $application_folder = ROOT . DIRECTORY_SEPARATOR . 'zerhuel_app';
  *
  * And away we go...
  */
+ // die(ENVIRONMENT);
 require_once BASEPATH.'core/CodeIgniter.php';
