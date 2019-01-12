@@ -8131,3 +8131,27 @@ INFO - 2019-01-12 23:19:33 --> Final output sent to browser
 DEBUG - 2019-01-12 23:19:33 --> Total execution time: 1.7797
 INFO - 2019-01-12 23:19:33 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
 INFO - 2019-01-12 23:19:33 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\erhiuel-website\zerhuel_app\hook was executed completely.
+INFO - 2019-01-12 23:21:20 --> Config Class Initialized
+INFO - 2019-01-12 23:21:20 --> Hooks Class Initialized
+DEBUG - 2019-01-12 23:21:20 --> UTF-8 Support Enabled
+INFO - 2019-01-12 23:21:20 --> Utf8 Class Initialized
+INFO - 2019-01-12 23:21:20 --> URI Class Initialized
+INFO - 2019-01-12 23:21:20 --> Router Class Initialized
+INFO - 2019-01-12 23:21:20 --> Output Class Initialized
+INFO - 2019-01-12 23:21:20 --> Security Class Initialized
+DEBUG - 2019-01-12 23:21:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-01-12 23:21:20 --> Input Class Initialized
+INFO - 2019-01-12 23:21:20 --> Language Class Initialized
+ERROR - 2019-01-12 23:21:20 --> 404 Page Not Found: Test/index
+INFO - 2019-01-12 23:21:20 --> Config Class Initialized
+INFO - 2019-01-12 23:21:20 --> Hooks Class Initialized
+DEBUG - 2019-01-12 23:21:20 --> UTF-8 Support Enabled
+INFO - 2019-01-12 23:21:20 --> Utf8 Class Initialized
+INFO - 2019-01-12 23:21:20 --> URI Class Initialized
+INFO - 2019-01-12 23:21:20 --> Router Class Initialized
+INFO - 2019-01-12 23:21:20 --> Output Class Initialized
+INFO - 2019-01-12 23:21:20 --> Security Class Initialized
+DEBUG - 2019-01-12 23:21:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-01-12 23:21:20 --> Input Class Initialized
+INFO - 2019-01-12 23:21:21 --> Language Class Initialized
+ERROR - 2019-01-12 23:21:21 --> 404 Page Not Found: Assets/php-error.css
