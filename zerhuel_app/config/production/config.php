@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Set your timezone (codes listed at http://php.net/manual/en/timezones.php)
  * Delete the following line if you've already defined a timezone elsewhere.
  *
- * @category	php.ini
+ * @category	php.inisadf
  * @since		0.0.1
  * @url			https://stackoverflow.com/questions/31309536/how-to-set-time-zone-in-codeigniter
  * 
@@ -69,7 +69,7 @@ else{
     $config['base_url'] = in_array($host, $allowed_hosts) ? $protocol.$host."/" : "we-do-not-recognise-this-host.com";
 }
  */
-  $config['base_url'] = 'https://scarfonictechtest0001.azurewebsites.net/zerhuel_public/';
+  $config['base_url'] = 'https://scarfonictechtest0001.azurewebsites.net/';
 /*
 |--------------------------------------------------------------------------
 | Index File
