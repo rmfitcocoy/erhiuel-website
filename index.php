@@ -53,7 +53,9 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+defined('ENVIRONMENT') OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? 'development') ,TRUE); 
+ // Setup variable of the default database host
 
 /*
  *---------------------------------------------------------------
@@ -312,4 +314,5 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+ die(ENVIRONMENT);
 require_once BASEPATH.'core/CodeIgniter.php';
