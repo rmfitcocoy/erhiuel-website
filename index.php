@@ -1,4 +1,16 @@
 <?php
+    function getEnvironmentVariable($name)
+    {
+        switch (true) {
+            case array_key_exists($name, $_ENV):
+                return $_ENV[$name];
+            case array_key_exists($name, $_SERVER):
+                return $_SERVER[$name];
+            default:
+                $value = getenv($name);//****notice line****
+                return $value === false ? null : $value; 
+        }
+    }
 /**
  * CodeIgniter
  *
@@ -53,10 +65,15 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
+ // echo getEnvironmentVariable(CI_ENV);
+ 
+
 $development = 'development';
 $testing = 'testing';
 $production = 'production';
-// defined('ENVIRONMENT') 	OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? '')) ,TRUE); // Setup variable of the default database password
+defined('ENVIRONMENT') 	OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? $development )) ,TRUE);
+ die(ENVIRONMENT); 
+// Setup variable of the default database password
 if(! defined('ENVIRONMENT') )
 {
 	/***************************************************************************
