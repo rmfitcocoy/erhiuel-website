@@ -53,10 +53,64 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
+$development = 'development';
+$testing = 'testing';
+$production = 'production';
+if(! defined('ENVIRONMENT') )
+{
+	/***************************************************************************
+	 *
+	 * Having conditional statement for not being access via cli is set to by boolean and check
+	 * if being access via cli it well automatically change the environment on it and Our goal is to send:
+	 * 		- php index.php cron daily_tasks important_job 831 --environment production
+	 *		- and have it run http://xyz.com/cron/daily_tasks/important_job/831
+	 *		using the production environment
+	 *
+	 *
+	 * @todo		Create a case expression for determining the CLI or web in HTTP_HOST
+	 * @var			Boolean						environment act ast the trigger point
+	 *
+	 ***************************************************************************/
+	// detects if it is a command line request
+	if ((php_sapi_name() == 'cli') or defined('STDIN'))
+	{
+		if (isset($argv)) 
+		{
+			// grab the --env argument, and the one that comes next
+			$key = (array_search('--environment', $argv));
+			$environment = $argv[$key +1];
 
-defined('ENVIRONMENT') OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? 'development') ,TRUE); 
- // Setup variable of the default database host
-
+			// get rid of them so they don't get passed in to our method as parameter values
+			unset($argv[$key], $argv[$key +1]);
+		}  
+		define('ENVIRONMENT', isset($_SERVER['ENVIRONMENT']) ? $_SERVER['ENVIRONMENT'] : $development); 
+	} 	
+	
+	// detect if it is http browsing site access
+	else
+	{
+		$domain = strtolower($_SERVER['HTTP_HOST']);
+		switch($domain) {		
+			case 'localhost:8080' :
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $development);
+			break;
+			
+			case 'localhost:8080' :
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $testing);
+			break;
+			
+			case 'scarfonictechtest0001.azurewebsites.net' :		
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $production);
+			break;
+			
+			default :
+				header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
+				echo 'Domain name is not match in the setup instances.';
+				exit(3); // EXIT_CONFIG
+			break;
+		}	
+	}
+}
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -314,5 +368,4 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
- die('test');
 require_once BASEPATH.'core/CodeIgniter.php';
