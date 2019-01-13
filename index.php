@@ -53,16 +53,11 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
- // echo getEnvironmentVariable(CI_ENV);
- 
-
 $development = 'development';
 $testing = 'testing';
 $production = 'production';
-// defined('ENVIRONMENT') 	OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? $development )) ,TRUE);
-define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'fsadfsadf');
- die(ENVIRONMENT); 
- // die('test'); 
+define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : $development);
+
 // Setup variable of the default database password
 if(! defined('ENVIRONMENT') )
 {
