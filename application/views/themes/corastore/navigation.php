@@ -41,7 +41,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Home</a>
+								<a href="<?php echo site_url(); ?>">Home</a>
 								<ul class="sub-menu">
 									<li><a href="<?php echo site_url(); ?>">Homepage 1</a></li>
 									<li><a href="<?php echo site_url(); ?>">Homepage 2</a></li>
@@ -58,11 +58,11 @@
 							</li>
 
 							<li>
-								<a href="<?php echo site_url('about'); ?>">">About</a>
+								<a href="<?php echo site_url('about'); ?>">About</a>
 							</li>
 
 							<li>
-								<a href="c<?php echo site_url('contact');?>">">Contact</a>
+								<a href="<?php echo site_url('contact');?>">Contact</a>
 							</li>
 						</ul>
 					</div>	
