@@ -56,6 +56,7 @@
 $development = 'development';
 $testing = 'testing';
 $production = 'production';
+// defined('ENVIRONMENT') 	OR define('ENVIRONMENT',$_SERVER['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? ($_ENV['CI_ENV'] ?? '')) ,TRUE); // Setup variable of the default database password
 if(! defined('ENVIRONMENT') )
 {
 	/***************************************************************************

@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /localhost:8080/erhiuel-website/
+    RewriteBase /erhiuel-website/
 
     #Removes access to the system folder by users.
     #Additionally this will allow you to create a System.php controller,
